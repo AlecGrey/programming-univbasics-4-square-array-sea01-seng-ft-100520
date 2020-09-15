@@ -1,5 +1,9 @@
-def square_array(array)
+def square_array(numbers)
   new_array = Array.new
-  array.length.times {|n| new_array << array[n]*array[n]}
+  counter = 0
+  while numbers[counter] do
+    new_array << numbers[counter] * numbers[counter]
+    counter += 1
+  end
   new_array
 end
